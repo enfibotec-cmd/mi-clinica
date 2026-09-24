@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="Sistema de gestión de usuarios"
+    >
+
+    <title>Gestión de Usuarios</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Gestión de Usuarios</h1>
+        <p>Administración de usuarios del sistema</p>
+    </header>
+
+    <main>
+
+        <section aria-labelledby="usuarios-titulo">
+
+            <div>
+                <h2 id="usuarios-titulo">Usuarios</h2>
+
+                <button
+                    type="button"
+                    id="btnRecargar"
+                >
+                    Actualizar
+                </button>
+            </div>
+
+            <div
+                id="estado"
+                role="status"
+                aria-live="polite"
+            >
+                Cargando usuarios...
+            </div>
+
+            <div id="listaUsuarios">
+                <!-- JavaScript insertará los usuarios aquí -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <small>
+            Sistema de gestión
+        </small>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+
+</body>
+</html>
